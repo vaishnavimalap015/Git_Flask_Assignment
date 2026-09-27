@@ -10,5 +10,9 @@
     {
         "name": "Priya",
         "course": "Flask"
+    },
+    {
+        "name": "Amit",
+        "course": "AWS"
     }
 ]
