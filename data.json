@@ -9,6 +9,10 @@
     },
     {
         "name": "Priya",
-        "course": "Java"
+        "course": "Flask"
+    },
+    {
+        "name": "Amit",
+        "course": "AWS"
     }
 ]
