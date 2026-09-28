@@ -111,6 +111,19 @@ def success():
 # ----------------------------------------------------
 # RUN FLASK APPLICATION
 # ----------------------------------------------------
+@app.route("/submittodoitem", methods=["POST"])
+def submit_todo_item():
+    item_name = request.form.get("itemName")
+    item_description = request.form.get("itemDescription")
+
+    todo_collection = db["todo_items"]
+
+    todo_collection.insert_one({
+        "itemName": item_name,
+        "itemDescription": item_description
+    })
+
+    return "To-Do item submitted successfully!"
 if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
