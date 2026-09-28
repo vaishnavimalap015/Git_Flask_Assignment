@@ -34,6 +34,20 @@
         <button type="submit">Submit</button>
 
     </form>
+<hr>
 
+<h2>To-Do List</h2>
+
+<form action="/submittodoitem" method="POST">
+
+    <label for="itemName">Item Name:</label><br>
+    <input type="text" id="itemName" name="itemName" required><br><br>
+
+    <label for="itemDescription">Item Description:</label><br>
+    <textarea id="itemDescription" name="itemDescription" rows="5" cols="40" required></textarea><br><br>
+
+    <button type="submit">Add To-Do Item</button>
+
+</form>
 </body>
 </html>
